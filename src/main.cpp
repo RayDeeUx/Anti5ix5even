@@ -173,7 +173,7 @@ std::string removeColorTags(const std::string& originalString) {
 	return geode::utils::string::replace(geode::utils::string::replace(geode::utils::string::replace(geode::utils::string::replace(originalString, "<cj>", ""), "<cl>", ""), "<c_>", ""), "</c>", "");
 }
 
-static constexpr std::pair<std::string, const char*> gameStatsManagerStats[] = {
+static std::pair<std::string, const char*> gameStatsManagerStats[] = {
 	// vanilla stats
 	{"<cy>stars</c>", "6"},
 	{"<co>secret coins</c>", "8"},
