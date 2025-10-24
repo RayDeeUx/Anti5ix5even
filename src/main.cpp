@@ -222,7 +222,7 @@ std::pair<std::string, int> checkForOffendingGSMStats() {
 	return {offendingStat, offendingStatValue};
 }
 
-static constexpr std::pair<std::string, int GJUserScore::*> gjUserScoreStats[] = {
+static std::pair<std::string, int GJUserScore::*> gjUserScoreStats[] = {
 	{"<cy>stars</c>", &GJUserScore::m_stars},
 	{"<cl>moons</c>", &GJUserScore::m_moons},
 	{"<co>secret coins</c>", &GJUserScore::m_secretCoins},
