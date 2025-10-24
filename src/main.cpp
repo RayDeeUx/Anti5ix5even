@@ -10,10 +10,8 @@ using namespace geode::prelude;
 #define TELEPORT_AMOUNT 10.f
 
 enum class Action {
-	Disabled = 0,
-	AutoKill = 1,
-	TelPAway = 2,
-	PushButn = 3
+	Disabled = 0, AutoKill = 1,
+	TelPAway = 2, PushButn = 3
 };
 
 // banning the number itself, and "common" "misspellings"
@@ -29,7 +27,7 @@ static const std::vector<std::string> blacklist = {
 	"iivxl", "iiviv", "iiv", "xl", "iv",
 	"01000011", "0x43",
 	"11000010", "34x0",
-	"6", "7"
+	"6", "7" // personally i wouldn't include these, but due to the nature of the meme (and the source material), i should leave these alone
 };
 
 bool noObjectIDs = true;
@@ -159,15 +157,6 @@ static const std::pair<std::string, bool*> booleanSettings[] = {
 	{"noOffendingIcons", &noOffendingIcons},
 	{"noOffendingLevelsWithOffendingTextObjects", &noOffendingLevelsWithOffendingTextObjects},
 };
-
-template<typename Function>
-void repeatedlyQueueFunction(int times, Function&& function){
-	if (times < 1) return function();
-	Loader::get()->queueInMainThread([times, fn = std::forward<Function>(function)]() mutable {
-		if (times == 1) fn();
-		else repeatedlyQueueFunction(times - 1, std::move(fn));
-	});
-}
 
 std::string removeColorTags(const std::string& originalString) {
 	return geode::utils::string::replace(geode::utils::string::replace(geode::utils::string::replace(geode::utils::string::replace(originalString, "<cj>", ""), "<cl>", ""), "<c_>", ""), "</c>", "");
@@ -382,7 +371,7 @@ class $modify(MyPlayLayer, PlayLayer) {
 				upOUf->setSettingValue<bool>("enabled", unpauseOnUnfocusOriginalSofttoggle);
 			}
 		});
-		CCScene::get()->addChild(alert);
+		CCScene::get()->addChild(alert); // dont add alert to playlayer!!!!
 		alert->show();
 	}
 	bool leaveFor(const std::string& reason) {
