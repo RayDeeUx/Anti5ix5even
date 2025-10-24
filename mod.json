@@ -1,0 +1,223 @@
+{
+	"geode": "4.7.0",
+	"gd": {
+		"win": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074",
+		"android": "2.2074"
+	},
+	"id": "raydeeux.anti5ix5even",
+	"name": "Anti5ix5even",
+	"version": "v1.0.0",
+	"developer": "RayDeeUx",
+	"description": "No more of that pesky number, or either of its digits.",
+	"repository": "https://github.com/RayDeeUx/Anti5ix5even",
+	"settings": {
+		"enabled": {
+			"name": "Enabled",
+			"description": "Toggles the mod.",
+			"type": "bool",
+			"default": true
+		},
+		"tolerable-header": {
+			"name": "Tolerable Settings",
+			"description": "These are the settings that could you could get away with leaving enabled without too much of a headache. They're enabled by default.",
+			"type": "title"
+		},
+		"noLevelsContainingName": {
+			"name": "Auto-Kick from Levels With Names Referencing The Two Digits",
+			"description": "Prevents you from playing levels whose names make *even the* ***__slightest__*** reference to either of The Two Digits.",
+			"type": "bool",
+			"default": true
+		},
+		"noLevelListsContainingName": {
+			"name": "Auto-Kick from Level Lists With Names Referencing The Two Digits",
+			"description": "Prevents you from viewing level lists whose names make *even the* ***__slightest__*** reference to either of The Two Digits.",
+			"type": "bool",
+			"default": true
+		},
+		"noHarderLevels": {
+			"name": "Auto-Kick from Rated Harder Levels",
+			"description": "Prevents you from playing rated Harder levels.\n\n<cy>You know ***__very__*** well why.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"noHarderLevelsInsideLevelLists": {
+			"name": "Auto-Kick from Level Lists with Rated Harder Levels",
+			"description": "Prevents you from viewing level lists with rated Harder levels.\n\n<cy>You know ***__very__*** well why.</c>",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingIcons": {
+			"name": "Auto-Kick from Levels If Any Gamemode's Current Icon Number References The Two Digits",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelsWithOffendingTextObjects": {
+			"name": "Auto-Kick from Levels Containing Text Objects Referring To The Two Digits",
+			"description": "Prevents you from playing levels containing text objects that make *even the* ***__slightest__*** reference to either of The Two Digits.",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelIDsConsecutively": {
+			"name": "Auto-Kick from Levels whose IDs Contain Both Of The Two Digits Consecutively",
+			"description": "Prevents you from playing levels whose Level IDs contain The Two Digits consecutively. Notable examples include:\n- <cr>CraZy</c> by DavJT\n- <cg>Because I Loved Her</c> by Jayuff\n- <cl>Moving Obstacles</c> by Sumsar\n- <cy>Polargeist X</c> by SpacePark\n- <co>Danger Zone</c> by GD Jose\n- <cg>stereo madness v2</c> by IIINePtunEIII\n- <co>Aquarius</c> by Skitten\n- <cy>Moonlight</c> by Unzor",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelIDsIndividually": {
+			"name": "Auto-Kick from Levels whose IDs Contain Both Of The Two Digits Individually",
+			"description": "Prevents you from playing levels whose Level IDs contain both of The Two Digits, but not consecutively. Notable examples include:\n- <cr>Bloodbath</c> by Riot and more\n- <cl>Promises</c> by Adiale\n- <cg>Chambers</c> by SirHadoken\n- <cg>through time</c> by Berkoo",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelIDsExclusiveOr": {
+			"name": "Auto-Kick from Levels whose IDs Contain Either Of The Two Digits",
+			"description": "Prevents you from playing levels whose Level IDs contain ***__ONLY__*** one of The Two Digits. Notable examples include:\n- <cl>ReTraY</c> by DiMaViKuLov26\n- <co>First Race</c> by Stamina\n- <cr>X</c> by TriAxis and TamaN\n- <cy>Almighty</c> by aArbolito\n- <ca>Unity</c> by TriAxis and FunnyGame\n- <cy>dorabaebasic5</c> by DORABAE\n- <cg>LETs GO</c> by izhar\n- <co>SLAM</c> by rafer",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelListIDsConsecutively": {
+			"name": "Auto-Kick from Level Lists whose IDs Contain Both Of The Two Digits Consecutively",
+			"description": "Prevents you from viewing level lists whose Level IDs contain The Two Digits consecutively. Notable examples include:\n- <cr>Best modern level</c> by Kataslysis\n- <cy>Five of a Kind</c> by qKitti\n- <cr>The Towerverse Story</c> by 16lord\n- <cr>Take Two</c> by xXLOCOXx\n- <cg>Find The Wubba Ducks</c> by GiggsRH\n- <c-AAAAAA>Prediction Gauntlet</c> by TwisterDude161\n- <cy>Learn Your Opposites</c> by sink\n- <ca>The Team Zero Catalogue</c> by Infra\n- <cr>certified bangers</c> by nasgubb\n- <co>Peak Platformers</c> by Colon",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelListIDsIndividually": {
+			"name": "Auto-Kick from Level Lists whose IDs Contain Both Of The Two Digits Individually",
+			"description": "Prevents you from viewing level lists whose Level IDs contain both of The Two Digits, but not consecutively. Notable examples include:\n- <cr>harvard entry exam</c> by Perox8\n- <cr>DORABAE Remake Trend 2022</c> by robotchief\n- <co>The best farming list</c> by OmegaT\n- <cr>this weather SUCKS</c> by CLIQUE\n- <cr>SUPER NLW RAINBOW</c> by PikachuFan42\n- <ca>Eurovision Song Contest</c> by 4y4",
+			"type": "bool",
+			"default": true
+		},
+		"noOffendingLevelListIDsExclusiveOr": {
+			"name": "Auto-Kick from Level Lists whose IDs Contain Either Of The Two Digits",
+			"description": "Prevents you from viewing level lists whose Level IDs contain ***__ONLY__*** one of The Two Digits. Notable examples include:\n- <cr>2 Player Training</c> by ZackTheMinion\n- <ca>Neodesign Bangers</c> by procurador\n- <cl>Sea Creatures</c> by zaroren\n- <cr>3</c> by KrmaL\n- <cy>Chill Dash</c> by CreatorCreepy",
+			"type": "bool",
+			"default": true
+		},
+		"noLevelListsWithOffendingLevelClaimRequirements": {
+			"name": "Auto-Kick from Level Lists whose Completion Requirement Count Contains Either Of The Two Digits",
+			"type": "bool",
+			"default": true
+		},
+		"noLevelListsWithOffendingRewardCounts": {
+			"name": "Auto-Kick from Level Lists whose Diamond Rewards Count Contains Either Of The Two Digits",
+			"type": "bool",
+			"default": true
+		},
+		"irritating-header": {
+			"name": "Irritating Settings",
+			"description": "These settings might give you a slightly more painful headache. They're enabled by default, but you should probably disable them after some time.",
+			"type": "title"
+		},
+		"handleXPositionBy": {
+			"name": "Handle X Position By...",
+			"description": "Decide what to do if the X position contains The Two Digits.\n\n<c-ff0000>***__THIS SETTING APPLIES TO BOTH PLAYERS. THIS SETTING CAN MAKE SOME LEVELS IMPOSSIBLE IF NOT DISABLED.__***</c>",
+			"type": "string",
+			"default": "Teleport Away",
+			"one-of": [
+				"Doing Nothing (Disabled)",
+				"Auto-Kill",
+				"Press Jump",
+				"Teleport Away"
+			]
+		},
+		"handleYPositionBy": {
+			"name": "Handle Y Position By...",
+			"description": "Decide what to do if the Y position contains The Two Digits.\n\n<c-ff0000>***__THIS SETTING APPLIES TO BOTH PLAYERS. THIS SETTING CAN MAKE SOME LEVELS IMPOSSIBLE IF NOT DISABLED.__***</c>",
+			"type": "string",
+			"default": "Teleport Away",
+			"one-of": [
+				"Doing Nothing (Disabled)",
+				"Auto-Kill",
+				"Press Jump",
+				"Teleport Away"
+			]
+		},
+		"autoKillOnPercent": {
+			"name": "(Classic) Auto-Kill if Percentage Contains Both Of The Two Digits Consecutively",
+			"description": "For obvious reasons, this only applies to Classic levels.",
+			"type": "bool",
+			"default": true
+		},
+		"autoKillOnTime": {
+			"name": "(Plat.) Auto-Kill if Time Contains Both Of The Two Digits Consecutively",
+			"description": "For obvious reasons, this only applies to Platformer levels.",
+			"type": "bool",
+			"default": true
+		},
+		"closeProfilesForID": {
+			"name": "Auto-Close Profiles If Account ID Contains Both Of The Two Digits Consecutively",
+			"type": "bool",
+			"default": true
+		},
+		"closeProfilesForUserID": {
+			"name": "Auto-Close Profiles If User ID Contains Both Of The Two Digits Consecutively",
+			"type": "bool",
+			"default": true
+		},
+		"closeProfilesForGlobalRank": {
+			"name": "Auto-Close Profiles If Global Rank Contains Both Of The Two Digits Consecutively",
+			"type": "bool",
+			"default": true
+		},
+		"closeProfilesForAnyStats": {
+			"name": "Auto-Close Profiles If Any Stats Contain Both Of The Two Digits Consecutively",
+			"type": "bool",
+			"default": true
+		},
+		"closeProfilesForUsername": {
+			"name": "Auto-Close Profiles If Username References The Two Digits",
+			"type": "bool",
+			"default": true
+		},
+		"closeIconKitForStats": {
+			"name": "Auto-Close Icon Kit/Garage If Any Stats Contain Either Of The Two Digits Individually",
+			"type": "bool",
+			"default": true
+		},
+		"infuriating-header": {
+			"name": "Infuriating Settings",
+			"description": "You ***__really__*** shouldn't enable these settings. They're disabled by default.",
+			"type": "title"
+		},
+		"noObjectIDs": {
+			"name": "Auto-Kick from Levels Using Object IDs Containing The Two Digits Consecutively",
+			"type": "bool",
+			"default": false
+		},
+		"noGroupIDs": {
+			"name": "Auto-Kick from Levels Using Group IDs Containing The Two Digits Consecutively",
+			"type": "bool",
+			"default": false
+		},
+		"noEditorLayers": {
+			"name": "Auto-Kick from Levels Using Editor Layers Containing The Two Digits Consecutively",
+			"type": "bool",
+			"default": false
+		},
+		"noColorChannels": {
+			"name": "Auto-Kick from Levels Using Color Channels Containing The Two Digits Consecutively",
+			"type": "bool",
+			"default": false
+		},
+		"replaceAllText": {
+			"name": "Aggressive Text Replacement",
+			"description": "Replaces most instances of The Two Digits with `*` s.",
+			"type": "bool",
+			"default": false
+		}
+	},
+	"tags": [
+		"modtober25", "joke",
+		"gameplay", "universal"
+	],
+	"issues": {
+		"url": "https://discord.com/channels/911701438269386882/1205523212444639292",
+		"info": "Ping me <cl>(@erymanthus)</c> in the Geode SDK Discord server's <cl>#help</c> channel if you need help. <cr>DMs are NOT accepted.</c>"
+	},
+	"links": {
+		"community": "https://discord.gg/WqZBYdBWZW",
+		"homepage": "https://discord.com/channels/822510988409831486/1206371881222144020"
+	}
+}
