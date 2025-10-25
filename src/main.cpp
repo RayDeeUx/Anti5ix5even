@@ -571,7 +571,6 @@ class $modify(MyPlayLayer, PlayLayer) {
 		if (!this->m_level || this->m_level->isPlatformer() || !this->m_player1 || !enabled || !gameHasStarted || !autoKillOnPercentageClassic) return PlayLayer::updateInfoLabel();
 
 		const int currPerc = PlayLayer::getCurrentPercentInt();
-		log::info("currPerc: {}", currPerc);
 		if (valueHasTheTwoDigits(currPerc)) {
 			PlayLayer::destroyPlayer(this->m_player1, this->m_player1);
 			MyPlayLayer::updateLabel(this, fmt::format("Killed Player 1 as they reached {}%!", currPerc));
