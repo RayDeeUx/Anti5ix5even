@@ -8,7 +8,7 @@
 	},
 	"id": "raydeeux.anti5ix5even",
 	"name": "Anti5ix5even",
-	"version": "v1.0.0",
+	"version": "v1.0.1",
 	"developer": "RayDeeUx",
 	"description": "No more of that pesky number, or either of its digits.",
 	"repository": "https://github.com/RayDeeUx/Anti5ix5even",
@@ -209,7 +209,7 @@
 		}
 	},
 	"tags": [
-		"modtober25", "joke",
+		"modtober25", "joke", "cheat",
 		"gameplay", "universal"
 	],
 	"issues": {
