@@ -85,7 +85,7 @@ bool separateDualIcons = false;
 bool unpauseOnUnfocus = false;
 bool unpauseOnUnfocusOriginalSofttoggle = false;
 
-class GaragePopup final : public geode::Popup<> {}; // dummy declaration to fake escape key call on parent for YetAnotherModMenu
+class GaragePopup final : public geode::Popup {}; // dummy declaration to fake escape key call on parent for YetAnotherModMenu
 
 void assignAppropriately(const std::string& settingValue, Action& settingBeingAssigned) {
 	if (settingValue == "auto-kill") settingBeingAssigned = Action::AutoKill;
