@@ -716,7 +716,7 @@ class $modify(MyGJGarageLayer, GJGarageLayer) {
 		geode::createQuickPopup("Anti5ix5even", fmt::format("You are unable to access your own icon kit:\n<c_>{}</c>", reason), "I Understand", nullptr, [this](FLAlertLayer* alert, bool close) {
 			if (!CCScene::get()->getChildByType<GJGarageLayer>(0) && !CCScene::get()->getChildByType<GaragePopup>(0)) return;
 			if (this->getUserObject("raydeeux.yetanotherqolmod/from-pauselayer")) {
-				geode::CloseEvent(static_cast<GaragePopup*>(this->getParent())).send();
+				geode::Popup::CloseEvent(static_cast<GaragePopup*>(this->getParent())).send();
 				static_cast<GaragePopup*>(this->getParent())->setKeypadEnabled(false);
 				static_cast<GaragePopup*>(this->getParent())->setTouchEnabled(false);
 				static_cast<GaragePopup*>(this->getParent())->removeFromParent();
