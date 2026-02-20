@@ -306,16 +306,16 @@ std::pair<std::string, int> checkForOffendingSDIIcons() {
 $on_mod(Loaded) {
 	for (auto &[settingName, booleanPointer] : booleanSettings) {
 		*booleanPointer = Mod::get()->getSettingValue<bool>(settingName);
-		listenForSettingChanges(settingName, [ptr = booleanPointer](const bool v){ *ptr = v; });
+		listenForSettingChanges<bool>(settingName, [ptr = booleanPointer](const bool v){ *ptr = v; });
 	}
 
 	assignAppropriately(geode::utils::string::toLower(Mod::get()->getSettingValue<std::string>("handleYPositionBy")), handleYPosition);
-	listenForSettingChanges("handleYPositionBy", [](const std::string& handleYPositionByNew) {
+	listenForSettingChanges<std::string>("handleYPositionBy", [](const std::string& handleYPositionByNew) {
 		assignAppropriately(geode::utils::string::toLower(handleYPositionByNew), handleYPosition);
 	});
 
 	assignAppropriately(geode::utils::string::toLower(Mod::get()->getSettingValue<std::string>("handleXPositionBy")), handleXPosition);
-	listenForSettingChanges("handleXPositionBy", [](const std::string& handleXPositionByNew) {
+	listenForSettingChanges<std::string>("handleXPositionBy", [](const std::string& handleXPositionByNew) {
 		assignAppropriately(geode::utils::string::toLower(handleXPositionByNew), handleXPosition);
 	});
 }
