@@ -715,7 +715,7 @@ class $modify(MyGJGarageLayer, GJGarageLayer) {
 	void closeGarage(const std::string& reason) {
 		geode::createQuickPopup("Anti5ix5even", fmt::format("You are unable to access your own icon kit:\n<c_>{}</c>", reason), "I Understand", nullptr, [this](FLAlertLayer* alert, bool close) {
 			if (!CCScene::get()->getChildByType<GJGarageLayer>(0) && !CCScene::get()->getChildByType<GaragePopup>(0)) return;
-			if (this->getUserObject("raydeeux.yetanotherqolmod/from-pauselayer")) static_cast<GaragePopup*>(this->getParent())->onClose(nullptr);
+			if (this->getUserObject("raydeeux.yetanotherqolmod/from-pauselayer")) static_cast<FLAlertLayer*>(this->getParent())->keyBackClicked();
 			else GJGarageLayer::onBack(nullptr);
 		})->show();
 	}
