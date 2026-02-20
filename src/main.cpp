@@ -437,8 +437,8 @@ class $modify(MyPlayLayer, PlayLayer) {
 			}
 			if (handleXPosition == Action::PushButn || (player->m_isSpider && player->m_isSideways)) {
 				MyPlayLayer::updateLabel(this, fmt::format("Player {} automatically jumped at X position {}!", oneOrTwo, xRoundedPosition));
-				PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), true, player == this->m_player2);
-				return PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), false, player == this->m_player2);
+				PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), true, player == this->m_player2, this->m_timestamp);
+				return PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), false, player == this->m_player2, this->m_timestamp);
 			}
 			if (handleXPosition == Action::TelPAway) {
 				return MyPlayLayer::teleportPlayerAwayX(player, player->m_position.x, this);
@@ -452,8 +452,8 @@ class $modify(MyPlayLayer, PlayLayer) {
 			}
 			if (handleYPosition == Action::PushButn || (player->m_isSpider && !player->m_isSideways)) {
 				MyPlayLayer::updateLabel(this, fmt::format("Player {} automatically jumped at Y position {}!", oneOrTwo, yRoundedPosition));
-				PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), true, player == this->m_player2);
-				return PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), false, player == this->m_player2);
+				PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), true, player == this->m_player2, this->m_timestamp);
+				return PlayLayer::queueButton(static_cast<int>(PlayerButton::Jump), false, player == this->m_player2, this->m_timestamp);
 			}
 			if (handleYPosition == Action::TelPAway) {
 				return MyPlayLayer::teleportPlayerAwayY(player, player->m_position.y, this);
