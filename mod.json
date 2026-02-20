@@ -1,14 +1,14 @@
 {
-	"geode": "4.7.0",
+	"geode": "5.0.0-beta.3",
 	"gd": {
-		"win": "2.2074",
-		"mac": "2.2074",
-		"ios": "2.2074",
-		"android": "2.2074"
+		"win": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081",
+		"android": "2.2081"
 	},
 	"id": "raydeeux.anti5ix5even",
 	"name": "Anti5ix5even",
-	"version": "v1.0.1",
+	"version": "v1.0.2",
 	"developer": "RayDeeUx",
 	"description": "No more of that pesky number, or either of its digits.",
 	"repository": "https://github.com/RayDeeUx/Anti5ix5even",
